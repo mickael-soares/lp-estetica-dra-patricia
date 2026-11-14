@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Patrícia Botelho Marandola | Estética Avançada & Harmonização</title>
+  <meta name="description" content="Realce sua beleza natural com procedimentos estéticos avançados e personalizados.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FDFBF7',
+              nude: '#F4ECE4',
+              sand: '#EADBDB',
+              gold: '#C5A880',
+              goldHover: '#B2946C',
+              dark: '#1C1917',
+              muted: '#78716C'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-cream/90 backdrop-blur-md border-b border-brand-sand/50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-xl md:text-2xl font-semibold tracking-wide text-brand-dark">
+        Dra. Patrícia Botelho
+        <span class="block text-xs font-sans tracking-widest uppercase text-brand-gold font-normal">Estética Avançada</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-dark/80">
+        <a href="#sobre" class="hover:text-brand-gold transition-colors">Sobre</a>
+        <a href="#tratamentos" class="hover:text-brand-gold transition-colors">Tratamentos</a>
+        <a href="#resultados" class="hover:text-brand-gold transition-colors">Resultados</a>
+        <a href="#diferenciais" class="hover:text-brand-gold transition-colors">Diferenciais</a>
+        <a href="#depoimentos" class="hover:text-brand-gold transition-colors">Depoimentos</a>
+        <a href="#faq" class="hover:text-brand-gold transition-colors">Dúvidas</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://www.instagram.com/drapatriciabotelhomarandola/" target="_blank" rel="noopener noreferrer" class="p-2 text-brand-dark/70 hover:text-brand-gold transition-colors" title="Instagram @drapatriciabotelhomarandola">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+        </a>
+        <a href="https://wa.me/5565996149878?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 bg-brand-gold hover:bg-brand-goldHover text-white text-xs sm:text-sm font-medium rounded-full shadow-sm hover:shadow transition-all">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Agendar</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 text-center md:text-left">
+        <span class="inline-block text-xs font-semibold uppercase tracking-widest text-brand-gold bg-brand-nude/80 px-3 py-1 rounded-full">
+          Cuidado & Naturalidade
+        </span>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-dark leading-tight">
+          Realce sua beleza com sofisticação e harmonia.
+        </h1>
+        <p class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
+          Tratamentos estéticos faciais e corporais personalizados para valorizar seus traços únicos, sem exageros.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="https://wa.me/5565996149878?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-gold hover:bg-brand-goldHover text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8.01 12.27C8.14 12.44 9.76 14.94 12.25 16.01C12.84 16.27 13.3 16.42 13.66 16.54C14.25 16.73 14.79 16.7 15.22 16.64C15.7 16.57 16.69 16.04 16.9 15.45C17.11 14.86 17.11 14.36 17.05 14.25C16.99 14.15 16.82 14.09 16.57 13.96C16.32 13.84 15.1 13.24 14.87 13.16C14.65 13.07 14.48 13.03 14.31 13.28C14.15 13.53 13.67 14.09 13.52 14.25C13.38 14.42 13.23 14.44 12.98 14.31C12.73 14.19 11.93 13.93 10.98 13.08C10.24 12.42 9.74 11.61 9.6 11.36C9.45 11.11 9.58 10.98 9.71 10.85C9.82 10.74 9.96 10.56 10.08 10.41C10.21 10.26 10.25 10.16 10.33 10C10.41 9.83 10.37 9.69 10.31 9.56C10.25 9.44 9.76 8.23 9.55 7.74C9.35 7.25 9.15 7.32 9 7.31C8.86 7.31 8.7 7.33 8.53 7.33Z"/>
+            </svg>
+            <span>Falar no WhatsApp</span>
+          </a>
+          <a href="#tratamentos" class="inline-flex items-center justify-center px-7 py-3.5 border border-brand-dark/20 hover:border-brand-dark text-brand-dark font-medium rounded-full transition-all">
+            Ver Procedimentos
+          </a>
+        </div>
+      </div>
+
+      <div class="relative mx-auto max-w-sm md:max-w-md">
+        <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-brand-nude border-8 border-white shadow-2xl relative group">
+          <img src="assets/dra-patricia-hero-clean.jpg" alt="Dra. Patrícia Botelho Marandola - Estética Avançada e Ozonioterapia" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-brand-sand/40 hidden sm:flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="font-serif text-lg font-bold text-brand-dark">+25 Anos</p>
+            <p class="text-xs text-brand-muted font-medium">Excelência em Saúde & Estética</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section id="sobre" class="py-20 bg-white border-y border-brand-sand/40 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <div class="aspect-[4/3] max-w-md mx-auto rounded-3xl bg-brand-cream border-4 border-white shadow-xl overflow-hidden relative group">
+          <img src="assets/dra-patricia.jpg" alt="Dra. Patrícia Botelho Marandola - Atendimento em Cuiabá" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+            <div class="text-white">
+              <span class="text-xs uppercase tracking-wider font-semibold text-brand-gold">Atendimento Clínico</span>
+              <p class="font-serif text-lg font-medium">Saúde Integrativa em Cuiabá</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-6 order-1 md:order-2">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Sobre a Especialista</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">
+          Mais de 25 anos dedicados à saúde, estética e autoestima
+        </h2>
+        <p class="text-brand-muted leading-relaxed">
+          Com sólida trajetória de mais de duas décadas no cuidado à saúde, a Dra. Patrícia Botelho alia a precisão da enfermagem estética avançada ao poder da ozonioterapia integrativa.
+        </p>
+        <p class="text-brand-muted leading-relaxed">
+          Cada protocolo em Cuiabá é desenhado com respeito estrito à harmonia facial e corporal: realçar a beleza que já existe, com segurança, sem exageros e com recuperação tranquila.
+        </p>
+        <div class="grid grid-cols-2 gap-4 pt-4 border-t border-brand-sand/40">
+          <div>
+            <h4 class="font-serif text-lg font-semibold text-brand-dark">Saúde Integrativa</h4>
+            <p class="text-xs text-brand-muted mt-1">Ozonioterapia e estética avançada combinadas.</p>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg font-semibold text-brand-dark">Cuiabá - MT</h4>
+            <p class="text-xs text-brand-muted mt-1">Atendimento exclusivo com hora marcada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tratamentos Section -->
+  <section id="tratamentos" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Procedimentos</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Tratamentos Especializados</h2>
+        <p class="text-brand-muted text-sm sm:text-base">Tecnologia e técnicas avançadas para realçar seus melhores traços.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1: Rinomodelação -->
+        <div class="bg-white p-8 rounded-2xl border border-brand-sand/60 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-brand-dark">Rinomodelação</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Correção de desníveis no dorso nasal e elevação sutil da ponta sem cirurgia plástica, entregando um perfil harmonioso e elegante.
+          </p>
+        </div>
+
+        <!-- Card 2: Ozonioterapia -->
+        <div class="bg-white p-8 rounded-2xl border border-brand-sand/60 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-brand-dark">Ozonioterapia & Estética Integrativa</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Potencialização de resultados estéticos, regeneração celular, melhora da circulação e desintoxicação tecidual com base biológica.
+          </p>
+        </div>
+
+        <!-- Card 3: Bioestimuladores -->
+        <div class="bg-white p-8 rounded-2xl border border-brand-sand/60 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="sun" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-brand-dark">Bioestimuladores de Colágeno</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Tratamento definitivo para firmeza dérmica facial e corporal com produtos líderes mundiais (Belotero), estimulando colágeno natural.
+          </p>
+        </div>
+
+        <!-- Card 4: Lábios & Preenchimento -->
+        <div class="bg-white p-8 rounded-2xl border border-brand-sand/60 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="heart" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-brand-dark">Preenchimento & Lábios dos Sonhos</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Definição de arco do cupido, hidratação profunda e volume proporcional respeitando o formato anatômico único de cada paciente.
+          </p>
+        </div>
+
+        <!-- Card 5: Pós-Emagrecimento -->
+        <div class="bg-white p-8 rounded-2xl border border-brand-sand/60 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-brand-dark">Flacidez Facial & Pós-Emagrecimento</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Protocolos especiais para restaurar a sustentação da face e redefinir o contorno após perda de peso rápida (efeito 'Mounjaro Face').
+          </p>
+        </div>
+
+        <!-- Card 6: Botox -->
+        <div class="bg-white p-8 rounded-2xl border border-brand-sand/60 shadow-sm hover:shadow-md transition-shadow space-y-4">
+          <div class="w-12 h-12 rounded-full bg-brand-nude flex items-center justify-center text-brand-gold">
+            <i data-lucide="feather" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-brand-dark">Toxina Botulínica Preventiva</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Suavização de rugas de expressão na testa, glabela e olhos com técnica refinada que preserva a expressividade natural.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Resultados / Antes e Depois -->
+  <section id="resultados" class="py-24 bg-brand-cream px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Resultados Reais</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Transformações Naturais & Elegantes</h2>
+        <p class="text-brand-muted text-sm sm:text-base">Confira alguns dos casos realizados no consultório pela Dra. Patrícia Botelho.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Caso 1: Rinomodelação -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-brand-sand/60 shadow-sm hover:shadow-md transition-all group">
+          <div class="aspect-square overflow-hidden bg-brand-nude relative">
+            <img src="assets/resultado-rinomodelacao-clean.jpg" alt="Antes e Depois de Rinomodelação - Dra. Patrícia Botelho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-brand-dark/80 backdrop-blur-sm text-white text-[10px] uppercase font-semibold px-2.5 py-1 rounded-full">
+              Rinomodelação
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-serif font-semibold text-brand-dark text-lg">Alinhamento & Perfil Natural</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Correção de curvatura do dorso e elevação da ponta com ácido hialurônico, sem corte e sem pós-operatório cirúrgico.
+            </p>
+          </div>
+        </div>
+
+        <!-- Caso 2: Preenchimento Labial -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-brand-sand/60 shadow-sm hover:shadow-md transition-all group">
+          <div class="aspect-square overflow-hidden bg-brand-nude relative">
+            <img src="assets/resultado-labios-clean.jpg" alt="Antes e Depois de Preenchimento Labial - Dra. Patrícia Botelho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-brand-dark/80 backdrop-blur-sm text-white text-[10px] uppercase font-semibold px-2.5 py-1 rounded-full">
+              Lábios dos Sonhos
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-serif font-semibold text-brand-dark text-lg">Contorno, Volume & Hidratação</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Desenho labial anatômico e definição do arco do cupido com acabamento suave e simétrico.
+            </p>
+          </div>
+        </div>
+
+        <!-- Caso 3: Rejuvenescimento Facial -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-brand-sand/60 shadow-sm hover:shadow-md transition-all group">
+          <div class="aspect-square overflow-hidden bg-brand-nude relative">
+            <img src="assets/resultado-facial-clean.jpg" alt="Rejuvenescimento e Firmeza Facial - Dra. Patrícia Botelho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-brand-dark/80 backdrop-blur-sm text-white text-[10px] uppercase font-semibold px-2.5 py-1 rounded-full">
+              Rejuvenescimento
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <h3 class="font-serif font-semibold text-brand-dark text-lg">Sustentação & Recuperação Dérmica</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Tratamento de flacidez e reestruturação facial personalizada para devolver o viço e a jovialidade.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="https://wa.me/5565996149878?text=Olá!%20Vi%20os%20resultados%20no%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-gold hover:bg-brand-goldHover text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all text-sm">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8.01 12.27C8.14 12.44 9.76 14.94 12.25 16.01C12.84 16.27 13.3 16.42 13.66 16.54C14.25 16.73 14.79 16.7 15.22 16.64C15.7 16.57 16.69 16.04 16.9 15.45C17.11 14.86 17.11 14.36 17.05 14.25C16.99 14.15 16.82 14.09 16.57 13.96C16.32 13.84 15.1 13.24 14.87 13.16C14.65 13.07 14.48 13.03 14.31 13.28C14.15 13.53 13.67 14.09 13.52 14.25C13.38 14.42 13.23 14.44 12.98 14.31C12.73 14.19 11.93 13.93 10.98 13.08C10.24 12.42 9.74 11.61 9.6 11.36C9.45 11.11 9.58 10.98 9.71 10.85C9.82 10.74 9.96 10.56 10.08 10.41C10.21 10.26 10.25 10.16 10.33 10C10.41 9.83 10.37 9.69 10.31 9.56C10.25 9.44 9.76 8.23 9.55 7.74C9.35 7.25 9.15 7.32 9 7.31C8.86 7.31 8.7 7.33 8.53 7.33Z"/>
+          </svg>
+          <span>Quero Avaliar Meu Caso no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="diferenciais" class="py-20 bg-brand-nude/40 border-y border-brand-sand/40 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <div class="space-y-3">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/10 text-brand-gold flex items-center justify-center mx-auto md:mx-0">
+            <i data-lucide="check" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif text-lg font-semibold text-brand-dark">Produtos Certificados</h4>
+          <p class="text-sm text-brand-muted">Utilização exclusiva de marcas consagradas e aprovadas pela Anvisa.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/10 text-brand-gold flex items-center justify-center mx-auto md:mx-0">
+            <i data-lucide="smile" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif text-lg font-semibold text-brand-dark">Sem Exageros</h4>
+          <p class="text-sm text-brand-muted">Filosofia baseada na elegância discreta e no respeito à sua individualidade.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/10 text-brand-gold flex items-center justify-center mx-auto md:mx-0">
+            <i data-lucide="clock" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif text-lg font-semibold text-brand-dark">Acompanhamento Pós</h4>
+          <p class="text-sm text-brand-muted">Suporte contínuo pós-procedimento para garantir tranquilidade e eficácia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos / Experiência Section -->
+  <section id="depoimentos" class="py-20 bg-white px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Experiência das Pacientes</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Confiança & Resultados</h2>
+        <p class="text-brand-muted text-sm sm:text-base">O carinho e a satisfação de quem confiou em nosso cuidado.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand/60 space-y-4">
+          <div class="flex text-amber-400 gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-sm text-brand-dark/90 italic leading-relaxed">
+            "A Dra. Patrícia tem uma mão incrivelmente leve. Meu botox ficou super natural, ninguém percebeu que fiz nada, apenas elogiaram que eu estava descansada!"
+          </p>
+          <div class="pt-2 border-t border-brand-sand/40">
+            <p class="font-serif font-semibold text-brand-dark text-sm">Mariana S.</p>
+            <p class="text-xs text-brand-muted">Paciente de Harmonização Facial</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand/60 space-y-4">
+          <div class="flex text-amber-400 gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-sm text-brand-dark/90 italic leading-relaxed">
+            "Atendimento impecável desde a recepção até o pós. Ela explica cada detalhe com muita paciência e passa uma segurança enorme."
+          </p>
+          <div class="pt-2 border-t border-brand-sand/40">
+            <p class="font-serif font-semibold text-brand-dark text-sm">Carla M.</p>
+            <p class="text-xs text-brand-muted">Paciente de Bioestimuladores</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-cream border border-brand-sand/60 space-y-4">
+          <div class="flex text-amber-400 gap-1">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-sm text-brand-dark/90 italic leading-relaxed">
+            "Fiz preenchimento labial com muito receio de ficar artificial, mas ficou perfeito e muito delicado. Super recomendo o trabalho da Dra. Patrícia!"
+          </p>
+          <div class="pt-2 border-t border-brand-sand/40">
+            <p class="font-serif font-semibold text-brand-dark text-sm">Juliana R.</p>
+            <p class="text-xs text-brand-muted">Paciente de Preenchimento Labial</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12 space-y-2">
+        <span class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Tire suas dúvidas</span>
+        <h2 class="font-serif text-3xl text-brand-dark">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white p-5 rounded-xl border border-brand-sand/50 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-medium text-brand-dark">
+            <span>Os procedimentos são dolorosos?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180 text-brand-gold"></i>
+          </summary>
+          <p class="mt-3 text-sm text-brand-muted leading-relaxed">
+            Utilizamos anestésicos tópicos potentes e agulhas/cânulas ultrafinas para maximizar o conforto durante todo o processo.
+          </p>
+        </details>
+
+        <details class="group bg-white p-5 rounded-xl border border-brand-sand/50 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-medium text-brand-dark">
+            <span>Quanto tempo dura o efeito do botox?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180 text-brand-gold"></i>
+          </summary>
+          <p class="mt-3 text-sm text-brand-muted leading-relaxed">
+            A duração média é de 3 a 5 meses, variando conforme o metabolismo e estilo de vida de cada paciente.
+          </p>
+        </details>
+
+        <details class="group bg-white p-5 rounded-xl border border-brand-sand/50 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-medium text-brand-dark">
+            <span>Preciso de repouso após o procedimento?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180 text-brand-gold"></i>
+          </summary>
+          <p class="mt-3 text-sm text-brand-muted leading-relaxed">
+            A maioria dos procedimentos permite retorno imediato às atividades normais, com restrições simples como evitar exercícios pesados no primeiro dia.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-20 bg-brand-nude/60 border-t border-brand-sand/50 px-6 text-center">
+    <div class="max-w-2xl mx-auto space-y-6">
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark">Pronta para realçar sua melhor versão?</h2>
+      <p class="text-brand-muted text-sm sm:text-base">
+        Clique no botão abaixo e fale diretamente com nossa equipe pelo WhatsApp para tirar dúvidas e agendar sua avaliação.
+      </p>
+      <a href="https://wa.me/5565996149878?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold hover:bg-brand-goldHover text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8.01 12.27C8.14 12.44 9.76 14.94 12.25 16.01C12.84 16.27 13.3 16.42 13.66 16.54C14.25 16.73 14.79 16.7 15.22 16.64C15.7 16.57 16.69 16.04 16.9 15.45C17.11 14.86 17.11 14.36 17.05 14.25C16.99 14.15 16.82 14.09 16.57 13.96C16.32 13.84 15.1 13.24 14.87 13.16C14.65 13.07 14.48 13.03 14.31 13.28C14.15 13.53 13.67 14.09 13.52 14.25C13.38 14.42 13.23 14.44 12.98 14.31C12.73 14.19 11.93 13.93 10.98 13.08C10.24 12.42 9.74 11.61 9.6 11.36C9.45 11.11 9.58 10.98 9.71 10.85C9.82 10.74 9.96 10.56 10.08 10.41C10.21 10.26 10.25 10.16 10.33 10C10.41 9.83 10.37 9.69 10.31 9.56C10.25 9.44 9.76 8.23 9.55 7.74C9.35 7.25 9.15 7.32 9 7.31C8.86 7.31 8.7 7.33 8.53 7.33Z"/>
+        </svg>
+        <span>Agendar via WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-white border-t border-brand-sand/50 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <p class="font-serif text-lg font-semibold text-brand-dark">Dra. Patrícia Botelho Marandola</p>
+        <p class="text-xs text-brand-muted mt-1">Estética Avançada, Harmonização & Rejuvenescimento</p>
+        <p class="text-xs text-brand-muted/70 mt-1">Atendimento personalizado com hora marcada • Cuiabá - MT</p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/drapatriciabotelhomarandola/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-full border border-brand-sand/70 text-xs font-medium text-brand-dark hover:border-brand-gold hover:text-brand-gold transition-colors">
+          <i data-lucide="instagram" class="w-4 h-4"></i>
+          <span>@drapatriciabotelhomarandola</span>
+        </a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-brand-sand/30 text-center text-xs text-brand-muted/70">
+      © 2026 Dra. Patrícia Botelho Marandola. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5565996149878?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." target="_blank" aria-label="Fale pelo WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8.01 12.27C8.14 12.44 9.76 14.94 12.25 16.01C12.84 16.27 13.3 16.42 13.66 16.54C14.25 16.73 14.79 16.7 15.22 16.64C15.7 16.57 16.69 16.04 16.9 15.45C17.11 14.86 17.11 14.36 17.05 14.25C16.99 14.15 16.82 14.09 16.57 13.96C16.32 13.84 15.1 13.24 14.87 13.16C14.65 13.07 14.48 13.03 14.31 13.28C14.15 13.53 13.67 14.09 13.52 14.25C13.38 14.42 13.23 14.44 12.98 14.31C12.73 14.19 11.93 13.93 10.98 13.08C10.24 12.42 9.74 11.61 9.6 11.36C9.45 11.11 9.58 10.98 9.71 10.85C9.82 10.74 9.96 10.56 10.08 10.41C10.21 10.26 10.25 10.16 10.33 10C10.41 9.83 10.37 9.69 10.31 9.56C10.25 9.44 9.76 8.23 9.55 7.74C9.35 7.25 9.15 7.32 9 7.31C8.86 7.31 8.7 7.33 8.53 7.33Z"/>
+    </svg>
+  </a>
+
+  <!-- Inicializar Ícones -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
